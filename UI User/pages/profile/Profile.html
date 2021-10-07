@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Stellar Admin</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="../../vendors/simple-line-icons/css/simple-line-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../vendors/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../../vendors/select2/select2.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../vendors/select2-bootstrap-theme/select2-bootstrap.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="shortcut icon" href="../../images/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="../../../adminassets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../../../adminassets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+ </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <nav
+        class="
+          navbar
+          default-layout-navbar
+          col-lg-12 col-12
+          p-0
+          fixed-top
+          d-flex
+          flex-row
+        "
+      >
+        <div class="navbar-brand-wrapper d-flex align-items-center">
+          <a class="navbar-brand brand-logo" href="../../index.html">
+            <img
+              src="../../images/home_images/tshimologong_logo_white (1).gif"
+              alt="logo"
+              class="logo-dark"
+            />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"
+            ><img
+              src="../../images/home_images/tshimologong_logo_white (1).gif"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex">
+            Welcome to tshimologong on boarding!
+          </h5>
+          <ul class="navbar-nav navbar-nav-right ml-auto">
+            <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="UserDropdown"
+                href="#"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="img-xs rounded-circle ml-2 recruitImg"
+                  src="../../images/faces/face8.jpg"
+                  alt="Profile image recruitImg"
+                />
+                <span class="font-weight-normal recruitFullname text-white">
+                  Ofentse khampe
+                </span></a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                aria-labelledby="UserDropdown"
+              >
+                <div class="dropdown-header text-center">
+                  <div>
+                    <img
+                      class="img-md rounded-circle recruitImg"
+                      src="../../images/faces/face8.jpg"
+                      style="width: 30%"
+                      alt="Profile image"
+                    />
+                    <p class="mb-1 mt-3 recruitFullname">Allen Moreno</p>
+                    <p class="font-weight-light text-muted mb-0 recruitEmail">
+                      allenmoreno@gmail.com
+                    </p>
+                  </div>
+                </div>
+                <a class="dropdown-item" href="../../pages/profile/Profile.html"
+                  ><i class="dropdown-item-icon icon-user text-primary"></i> My
+                  Profile <span class="badge badge-pill badge-danger"></span
+                ></a>
+              
+                <a class="dropdown-item signOut"
+                  ><i class="dropdown-item-icon icon-power text-primary"></i
+                  >Sign Out</a
+                >
+              </div>
+            </li>
+          </ul>
+          <button
+            class="
+              navbar-toggler navbar-toggler-right
+              d-lg-none
+              align-self-center
+            "
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar ">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="# " class="nav-link">
+                <div class="profile-image">
+                  <img
+                    class="img-xs rounded-circle recruitImg"
+                    src="../../images/faces/face8.jpg "
+                    alt="profile image "
+                  />
+                  <div class="dot-indicator bg-success"></div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name recruitFullname">Ofentse Khampe</p>
+                  <p class="designation">Intern</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">Dashboard</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html ">
+                <span class="menu-title">HOME</span>
+                <i class="icon-home menu-icon"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../profile/Profile.html ">
+                <span class="menu-title">PROFILE</span>
+                <i class="icon-user menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../../pages/onboarding/onboarding.html "
+              >
+                <span class="menu-title">ONBOARDING</span>
+                <i class="icon-note menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/Departments/Department.html">
+                <span class="menu-title">DEPARTMENTS</span>
+                <i class="icon-people menu-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">Profile</h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Profile</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Profile
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-md-10 grid-margin stretch-card cards">
+                <div class="card moving-card" id="EditCard">
+                  <div class="address card-details">
+                    <div style="display: flex; justify-content: center">
+                      <img
+                        alt=""
+                        class="img-fluid recruitImg"
+                        style="border-radius: 35%"
+                      />
+                    </div>
+                    <br />
+
+                    <h4 class="recruitFullname">Ofentse khampe</h4>
+                  </div>
+                  <div class="address card-details">
+                    <i class="icon-user menu-icon"></i>
+                    <h4>Status</h4>
+                    <p id="recruitStatus">Active</p>
+                  </div>
+                  <div class="address card-details">
+                    <i class="icon-user btn-icon-primary menu-icon"></i>
+                    <h4>Name & surname</h4>
+                    <p class="recruitFullname">ofentse Khampe</p>
+                  </div>
+
+                  <div class="email card-details">
+                    <i class="icon-envelope-open menu-icon"></i>
+                    <h4>Email:</h4>
+                    <p class="recruitEmail">ofentse@tshimologong.Jorburg</p>
+                  </div>
+                  <div class="Role card-details">
+                    <i class="icon-phone menu-icon"></i>
+                    <h4>Role</h4>
+                    <p id="recruitRole">Intern</p>
+                  </div>
+  
+                  <div class="pro-upgrade">
+                    <span class="nav-link">
+                      <button
+                        type="submit"
+                        class="btn btn-primary mr-2"
+                        id="btnUpdate"
+                      >
+                        Update profile
+                      </button>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div
+                    class="card moving-card2"
+                    style="opacity: 0"
+                    id="submitCard"
+                  >
+                    <div class="card-body">
+                      <h4 class="card-title">Edit Profile details</h4>
+                      <p class="card-description"></p>
+                      <form class="forms-sample">
+                        <div class="form-group">
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input"
+                              id="customFile"
+                              name="customFile"
+                            />
+                            <label class="custom-file-label" for="customFile"
+                              >Choose file</label
+                            >
+                          </div>
+                          <div class="text-danger" id="uploadError" style="display: none;" >
+                            <p class="lead"><strong>Select image first before submission</strong></p>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="btnProfilePictureSubmit"
+                          >
+                            Save uploaded image
+                          </button>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="exampleInputUsername1">First Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="FirstName"
+                            placeholder="FirstName"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputUsername1">Last Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="LastName"
+                            placeholder="Lastname"
+                          />
+                        </div>
+
+                        <!-- <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                            placeholder="Password"
+                          />
+                        </div> -->
+ 
+                        <button
+                          type="button"
+                          class="btn btn-primary mr-2"
+                          id="BtnSubmit"
+                        >
+                          Submit
+                        </button>
+                        <button class="btn btn-light">Cancel</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section id="edit-details"></section>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div
+              class="
+                d-sm-flex
+                justify-content-center justify-content-sm-between
+              "
+            >
+              <span
+                class="
+                  text-muted
+                  d-block
+                  text-center text-sm-left
+                  d-sm-inline-block
+                "
+                >Copyright © bootstrapdash.com 2020</span
+              >
+              <span
+                class="
+                  float-none float-sm-right
+                  d-block
+                  mt-1 mt-sm-0
+                  text-center
+                "
+              >
+                Free
+                <a href="#" target="_blank">Bootstrap admin templates</a> from
+                Bootstrapdash.com</span
+              >
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+
+
+<!--Profile update-->
+
+     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModalU" id="btnSuccessProfile" style="display: none;">
+        Failed Login
+      </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="LoginModalU" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Profile Update
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="profileUpdateCloseIcon"></button>
+                        </div>
+                        <div class="modal-body text-success">
+             
+                            <h2>Profile information updated! <i class="bi bi-check-circle-fill text-success" style="font-size: x-large;"></i> </h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="profileUpdateClose">
+                Close
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <!--Failed login-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal" id="btnLoginFail" style="display: none;">
+        Failed Login
+      </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Login Attempt Fail
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="loginFailCloseIcon"></button>
+                        </div>
+                        <div class="modal-body text-danger">
+                            <h2>Login Required to access this page!</h2>
+                        </div>
+                        <div class="modal-body text-danger" id="closeTimer"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="loginFailClose">
+                Close
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <!-- Modal -->
+        
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModall"
+        id="btnRegistrationSuccess"
+        style="display: none"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModall"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Profile Picture Upload Confirmation.
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-success">
+              Profile Picture Upload successful!
+              <i class="bi bi-check-circle-fill text-success" style="font-size: x-large;"></i>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                id="closeSuccess"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-3.6.0.min.js "></script>
+    <script src="../../../adminassets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../../adminassets/js/popper.min.js"></script>
+    <script src="../../../adminassets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let details;
+      let email;
+      $('#loginFailClose,#loginFailCloseIcon').click(function () {
+        window.location.href = '../../../index.html';
+      });
+        $('#closeSuccess').click(function () {
+        window.location.href = "../../index.html";
+      });
+      
+     
+     $('#profileUpdateClose,#profileUpdateCloseIcon').click(function () {
+         window.location.href = "../../index.html";
+      });
+
+      $('.signOut').click(function () {
+        sessionStorage.clear();
+        window.location.href = '../../../index.html';
+      });
+      window.addEventListener('load', function () {
+        details = JSON.parse(sessionStorage.getItem('details'));
+        if (!details) {
+          document
+            .querySelector('#btnLoginFail')
+            .dispatchEvent(new Event('click'));
+
+          let closeDisplayMessage = document.getElementById('closeTimer');
+          let count = 6;
+          var interval = window.setInterval(function () {
+            closeDisplayMessage.innerHTML =
+              '<h2>Redirecting to login page in :' + count + '</h2>';
+            count--;
+            if (count === 0) {
+              clearInterval(interval);
+              document
+                .getElementById('loginFailClose')
+                .dispatchEvent(new Event('click'));
+            }
+          }, 1000);
+        } else {
+          
+          details = details[0];
+          document.getElementById('recruitStatus').innerHTML =
+            details.userStatus;
+          let fullNames = document.querySelectorAll('.recruitFullname');
+          for (fullName of fullNames) {
+            fullName.innerHTML = details.firstname + ' ' + details.lastname;
+          }
+
+          let emails = document.querySelectorAll('.recruitEmail');
+          for (email of emails) {
+            email.innerHTML = details.userEmail;
+          }
+
+          document.getElementById('FirstName').value = details.firstname;
+          document.getElementById('LastName').value = details.lastname;
+          document.getElementById('recruitStatus').innerHTML = 'Active';
+          $.ajax({
+            url: 'https://localhost:44318/api/User/ImageUrl',
+            method: 'POST',
+            cache: false,
+            data: {
+              id: details.userID,
+            },
+            success: function (dataResponse) {
+              let imgProfiles = document.querySelectorAll('.recruitImg');
+              if (dataResponse) {
+                for (img of imgProfiles) {
+                  img.src = 'https://localhost:44318/' + dataResponse;
+                }
+              } else {
+                for (img of imgProfiles) {
+                  img.src = '../../images/default.png';
+                }
+              }
+            },
+            error: function () {
+                            alert('Server/network error, request not complete');
+
+            },
+            complete: function () {},
+          });
+        }
+      });
+
+      // Profile picture upload/change.
+      $('#customFile').on('change', function () {
+        let fileInputData = $(this).val().split('\\').pop();
+        $(this).next('.custom-file-label').html(fileInputData);
+      });
+
+      let btnProfilePictureSubmit = $('#btnProfilePictureSubmit');
+      btnProfilePictureSubmit.click(function () {
+        let file = $('.custom-file-input').get(0).files;
+        let formFields = new FormData();
+        formFields.append('UserID', details.userID);
+        formFields.append('file', file[0]);
+        if(file[0] !== undefined){
+          document.getElementById('uploadError').style.display = "none";
+           $.ajax({
+          url: 'https://localhost:44318/api/User/ImageUpload',
+          method: 'POST',
+          contentType: false,
+          processData: false,
+          cache: false,
+
+          data: formFields,
+          success: function (dataResponse) {
+             document
+                .querySelector('#btnRegistrationSuccess')
+                .dispatchEvent(new Event('click'));
+          },
+          error: function () {
+            console.log('fail');
+          },
+          complete: function (jqXHR) {
+            console.log(jqXHR);
+          },
+        });
+        }
+        else{
+          document.getElementById('uploadError').style.display = "";
+
+        }
+       
+      });
+
+      let btnSubmit = $('#BtnSubmit');
+      btnSubmit.click(function () {
+        let firstName = $('#FirstName').val();
+        let lastName = $('#LastName').val();
+
+        $.ajax({
+          url: 'https://localhost:44318/api/User/UpdateUser',
+          method: 'POST',
+          data: {
+            UserID: details.userID,
+            UserRole: 2,
+            Firstname: firstName,
+            Lastname: lastName,
+            UserEmail: details.userEmail,
+            Password: 'dummy',
+          },
+          success: function (dataResponse) {
+            console.log(dataResponse);
+            console.log(details);
+            
+            sessionStorage.setItem(
+                  'details',
+                  JSON.stringify([dataResponse])
+                );
+                document
+                .getElementById('btnSuccessProfile')
+                .dispatchEvent(new Event('click'));
+          },
+          error: function () {
+           console.log("Wrong");
+          },
+        });
+      });
+    </script>
+    <script>
+      var btnUpdate = document.getElementById('btnUpdate');
+      //var btnSubmit = document.getElementById('BtnSubmit');
+      var editCard = document.getElementById('EditCard');
+      var submitCard = document.getElementById('submitCard');
+
+      function edit_details(e) {
+        e.stopPropagation();
+
+        submitCard.style.right = '850px';
+        submitCard.style.opacity = '1';
+        editCard.style.opacity = '0';
+      }
+
+      function submitcard(e) {
+        e.stopPropagation();
+        submitCard.style.right = '-850px';
+        submitCard.style.opacity = '0';
+        editCard.style.opacity = '1';
+      }
+      btnUpdate.addEventListener('click', function (e) {
+        edit_details(e);
+      });
+
+      /** btnSubmit.addEventListener('click', function (e) {
+      submitcard(e);
+    });**/
+    </script>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../../vendors/select2/select2.min.js"></script>
+    <script src="../../vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../../js/typeahead.js"></script>
+    <script src="../../js/select2.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>

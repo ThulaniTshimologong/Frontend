@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Home page</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="./UI User/images/tshimologong_logo_white.gif" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+        <div class="logo">
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="index.html" class="mainIMG"
+            ><img
+              src="./UI User/images/tshimologong_logo_white.gif"
+              alt=""
+              class="img-fluid"
+            />
+            &nbsp; ONBOARDING</a
+          >
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a
+                class="nav-link scrollto active"
+                onclick="closee()"
+                href="#hero"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto" onclick="closee()" href="#faq"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                id="logSign"
+                class="nav-link scrollto loginbtn"
+                style="width: auto"
+                >Login / Sign in</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="container text-center text-md-left" data-aos="fade-up">
+        <h1 id="welcomeHeading"></h1>
+        <h2 id="info-div"></h2>
+        <a href="#about" class="btn-get-started scrollto">Read more</a>
+      </div>
+
+      <div id="login-form" class="login-page">
+        <!-- Creating the form box -->
+
+        <div class="form-box">
+          <button id="closebtn" onclick="closee()" class="btnclose">
+            <i class="bi bi-x-circle"></i>
+          </button>
+          <div class="button-box">
+            <div id="btn"></div>
+
+            <button type="button" id="btnLogin" class="toggle-btn">
+              Log In
+            </button>
+            <button type="button" id="btnRegister" class="toggle-btn">
+              Register
+            </button>
+          </div>
+
+          <!-- Login form -->
+          <form id="login" class="input-group-login">
+            <div class="field email">
+              <div class="input-area">
+                <input
+                  type="text"
+                  id="email_input"
+                  class="input-field"
+                  placeholder="Email id"
+                />
+                <i class="icon fas fa-envelope"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+              <div
+                id="emailLoginError"
+                style="color: red; font-size: large; display: none"
+              >
+                Email can't be blank
+              </div>
+            </div>
+            <div class="field password">
+              <div class="input-area">
+                <input
+                  type="password"
+                  id="password_input"
+                  class="input-field"
+                  placeholder="Enter password"
+                />
+                <i class="icon fas fa-lock"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+              <div
+                id="passwordLoginError"
+                class="error error-txt"
+                style="color: red; font-size: large; display: none"
+              >
+                Password can't be blank
+              </div>
+            </div>
+            <div id="userLoginError">
+              <span style="color: red; font-size: large"
+                >User not found, please check credentials again or
+                register</span
+              >
+            </div>
+            <!--<input type="checkbox" id="Rememberchk" class="check-box" />
+
+            <span id="span">Remember me</span>-->
+
+            <button type="button" id="btnsubmit" class="submit-btn">
+              Log In
+            </button>
+          </form>
+
+          <!-- registration form -->
+          <form id="register" class="input-group-register">
+            <div class="field email" id="emails">
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="Firstname"
+                  class="input-field"
+                  placeholder="Enter name"
+                  id="regFirstname"
+                />
+                <i class="icon fas fa-id-card"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorName"
+              >
+                Name can't be blank
+              </div>
+            </div>
+
+            <div class="field email" id="emails">
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="Lastname"
+                  class="input-field"
+                  placeholder="Enter last name"
+                  id="regLastname"
+                />
+                <i class="icon fas fa-id-card"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorLast"
+              >
+                Last Name can't be blank
+              </div>
+            </div>
+
+            <div class="field email" id="emails">
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="UserEmail"
+                  class="input-field"
+                  placeholder="Enter Email"
+                  id="UserEmail"
+                />
+                <i class="icon fas fa-id-card"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorEmail"
+              >
+                Email can't be blank
+              </div>
+
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorEmailType"
+              >
+                Email should have format Eg userGivenName@tshimologong.joburg
+              </div>
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorEmailTypeReg"
+              >
+                Duplicate Email, not allowed to register .
+              </div>
+            </div>
+            <div class="field password" id="pass">
+              <div class="input-area">
+                <input
+                  type="password"
+                  name="Password"
+                  class="input-field"
+                  placeholder="Enter password"
+                  id="Password"
+                />
+                <i class="icon fas fa-lock"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorPassword"
+              >
+                Password can't be blank
+              </div>
+
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorPasswordType"
+              >
+                Password have to be 8 or more characters, a combination of
+                letters (Upper and lower case), numbers and unique characters Eg
+                Abc1234_
+              </div>
+            </div>
+            <div class="field password" id="confirm">
+              <div class="input-area">
+                <input
+                  type="password"
+                  id="PasswordConfirm"
+                  class="input-field"
+                  placeholder="Confirm password"
+                />
+                <i class="icon fas fa-lock"></i>
+                <i class="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorConfirm"
+              >
+                Please retype password
+              </div>
+
+              <div
+                style="color: red; margin-top: 2%; font-size: larger"
+                class="errorReg errorConfirmType"
+              >
+                Password and confirmation password do not match
+              </div>
+            </div>
+            <input type="checkbox" id="terms_check" class="check-box" /><span
+              id="span"
+              ><a href="#" id="show_terms"
+                >Agree to the terms and conditions</a
+              ></span
+            >
+            <div
+              style="color: red; margin-top: 2%; font-size: larger"
+              class="errorReg errorAgree"
+            >
+              You have to agree to terms and conditions.
+            </div>
+            <div>
+              <button type="button" id="register_btn" class="submit-btn">
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-7" data-aos="fade-right">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
+              <h3 data-aos="fade-up">
+                HOW EVERYTHING BEGAN: A DIGITAL REVOLUTION WITH ONLINE
+                ON-BOARDING
+              </h3>
+              <p data-aos="fade-up">
+                Management jargon first created in the 1970s that refers to the
+                mechanism through which new employees acquire the necessary
+                knowledge, skills, and behaviors in order to become effective
+                organizational members and insiders Numerous challenges on a
+                day-to-day basis, but none more intense than recruitment and
+                employee onboarding. The demand is insatiable, but the talent
+                pool continues to shrink steadily.
+              </p>
+
+              <p>
+                Succeeding in the quest to find the right candidate despite the
+                talent.Online onboarding process is necessary to help your new
+                hires settle down in their jobs, get to know the organization,
+                obtain clarity on their job objectives, and forge a good
+                relationship with other employees. But after finding the right
+                person, an even larger challenge begins. Onboarding spans from
+                the minute you make an offer to the time the employee starts
+                genuinely producing in a role.This onboarding system is easy to
+                use and it will outline all of the information the user will
+                have to be aware of.<br />
+                A support section, FAQ and page will help user communicate
+                effectiively with onboarding staff incase of any
+                misunderstanding during this "virtual/online" onboarding.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper" id="wrapper">
+          <img src="#" alt="" />
+          <div class="content" style="background-color: #969393; padding: 7%">
+            <header>Read Terms</header>
+            <p>
+              Services that use Google’s Terms of Service & their
+              service-specific additional terms and policies.
+            </p>
+            <ul class="terms">
+              <li>
+                I acknowledge and agree that my personal information is required
+                for the Talent and Training Portal and that it will not be
+                disclosed to any unauthorised parties. Accordingly, I hereby
+                consent to the processing of my personal information by BMW SA
+                or any entity duly authorised thereto by BMW SA in accordance
+                with the prevailing data privacy legislation. Such processing
+                shall include, but not be limited to, the collection, handling,
+                and management, storage, safe-guarding and sharing of the data
+                with other BMW Group entities as well as authorised service
+                providers and the trans-border flow of such data across South
+                African borders, if necessary.
+              </li>
+            </ul>
+            <div class="buttons">
+              <button class="item" id="terms_btn" id="item_terms">
+                I understand
+              </button>
+              <a href="#" class="item">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+      <!-- ======= F.A.Q Section ======= -->
+      <section id="faq" class="faq section-bg">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>F.A.Q</h2>
+            <p>
+              A frequently asked questions (FAQ) forum is often used in
+              articles, websites, email lists, and online forums where common
+              questions tend to recur, for example through posts or queries by
+              new users related to common knowledge gaps
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  class="collapse"
+                  data-bs-target="#faq-list-1"
+                  >how does onboarding work with my site?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-1"
+                  class="collapse show"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    We encourage you to create an account directly on onboarding
+                    website. Generally a site will place a login button on their
+                    site. When the user clicks this button they redirect to
+                    onboarding login form where they can sign in or create an
+                    account.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2"
+                  class="collapsed"
+                  >Can i change my email address<i
+                    class="bx bx-chevron-down icon-show"
+                  ></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-2"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Yes. This is why we recommend using UUID as the primary key.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-3"
+                  class="collapsed"
+                  >Does onboarding handle authorization ?<i
+                    class="bx bx-chevron-down icon-show"
+                  ></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-3"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    No. Onboarding only handles authentication. Granting users
+                    specific access and permissions is handled on the agency
+                    side. For example, some agencies use active directory to
+                    store what applications a user can access.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-4"
+                  class="collapsed"
+                  >What’s the proper channel for me to use for giving feedback
+                  on the company? Our products and services?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-4"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Visit our social media platforms or send us email here:
+                    <a href="#mailto:boarding@gmail.com">boarding@gmail.com</a>
+                  </p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="400">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-5"
+                  class="collapsed"
+                  >I need a meeting room. How do I book it and what’s best
+                  practice when it comes to usage?<i
+                    class="bx bx-chevron-down icon-show"
+                  ></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-5"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Book with administration department or send them an email.
+                  </p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="500">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-5"
+                  class="collapsed"
+                  >How will I know if I’m doing a good job? A not-so-good job?<i
+                    class="bx bx-chevron-down icon-show"
+                  ></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-5"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Similarly to establishing yourself as the go-to for
+                    questions, being asked to provide your input during
+                    discussions and meetings is another indicator that you’re
+                    making a positive impressio
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End F.A.Q Section -->
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModall"
+        id="btnRegistrationSuccess"
+        style="display: none"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModall"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Recruit Registration Confirmation.
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-danger">
+              Registration of recruit successful! , you may now log in.
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        id="btnRegistrationError"
+        style="display: none"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Recruit Registration
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-danger">
+              Registration of recruit not successful!, request admin to register
+              you first .
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Tshimologong</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits"></div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/login.js"></script> -->
+    <!--  <script src="assets/js/register.js"></script> -->
+    <script
+      src="assets/vendor/Jquery/jquery.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      var loginEl = document.getElementById('login');
+      var registerEl = document.getElementById('register');
+      var btnLogin = document.getElementById('btnLogin');
+      var btnRegister = document.getElementById('btnRegister');
+      var loginLink = document.querySelector('.loginbtn');
+      var z = document.getElementById('btn');
+
+      function register(e) {
+        e.stopPropagation();
+        // registerEl.style.transition = ".1s";
+        loginEl.style.left = '-500px';
+        // registerEl.style.display = "block";
+        registerEl.style.left = '50px';
+        z.style.left = '110px';
+      }
+
+      function login(e) {
+        e.stopPropagation();
+        // loginEl.style.display = "block";
+        registerEl.style.left = '-500px';
+        loginEl.style.left = '50px';
+        z.style.left = '0px';
+      }
+      btnLogin.addEventListener('click', function (e) {
+        document.getElementById('userLoginError').style.display = 'none';
+        login(e);
+      });
+      btnRegister.addEventListener('click', function (e) {
+        $('.errorReg').css('display', 'none');
+        register(e);
+      });
+      var modal = document.getElementById('login-form');
+
+      loginLink.addEventListener('click', function (event) {
+        $('.errorReg').css('display', 'none');
+        document.getElementById('userLoginError').style.display = 'none';
+        login(event);
+        var hero = document.getElementById('info-div');
+        hero.style.display = 'none';
+        modal.style.display = 'block';
+        if (event.target == modal) {
+          modal.style.display = 'none';
+          alert('run');
+        }
+      });
+    </script>
+    <script>
+      function landingPageIncomingContent() {
+        fetch('https://localhost:44318/api/LandingPageContent')
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById('welcomeHeading').innerHTML = data.heading;
+            document.getElementById('info-div').innerHTML = data.description;
+          });
+      }
+      window.addEventListener('load', landingPageIncomingContent);
+
+      $(document).ready(function () {
+        let checkLiked = false;
+        let check = $('#terms_check');
+        check.on('change', function () {
+          if (document.getElementById('terms_check').checked) {
+            checkLiked = true;
+          } else {
+            checkLiked = false;
+          }
+        });
+
+        let terms_btn = $('#terms_btn');
+        terms_btn.click(function () {
+          document.getElementById('terms_check').checked = true;
+          document
+            .getElementById('terms_check')
+            .dispatchEvent(new Event('change'));
+        });
+
+        var loginSubmit = $('#btnsubmit');
+        loginSubmit.click(function (e) {
+          if (!$('#email_input').val()) {
+            document.getElementById('emailLoginError').style.display = 'block';
+            e.stopPropagation();
+            e.preventDefault();
+            return;
+          } else {
+            document.getElementById('emailLoginError').style.display = 'none';
+          }
+          if (!$('#password_input').val()) {
+            document.getElementById('passwordLoginError').style.display =
+              'block';
+            e.stopPropagation();
+            e.preventDefault();
+            return;
+          } else {
+            document.getElementById('passwordLoginError').style.display =
+              'none';
+          }
+
+          $.ajax({
+            url: 'https://localhost:44318/api/User/Login',
+            method: 'POST',
+            data: {
+              email: $('#email_input').val(),
+              password: $('#password_input').val(),
+            },
+            success: function (responseData) {
+              if (responseData.firstname === 'Not available') {
+                document.getElementById('userLoginError').style.display =
+                  'block';
+                return;
+              }
+
+              if (responseData) {
+                sessionStorage.setItem(
+                  'details',
+                  JSON.stringify([responseData])
+                );
+
+                document.getElementById('userLoginError').style.display =
+                  'none';
+                if (responseData.userRole == 1) {
+                  window.location.href = 'AdminDashboard.html';
+                }
+                if (responseData.userRole == 2) {
+                  window.location.href = 'UI User/index.html';
+                }
+              }
+            },
+            error: function () {
+              alert('Server/network error, request not complete');
+            },
+          });
+        });
+
+        var registerSubmit = $('#register_btn');
+        var checkCredentials = false;
+        registerSubmit.click(function (e) {
+          if (
+            !$('#regFirstname').val() ||
+            !$('#regLastname').val() ||
+            !$('#UserEmail').val() ||
+            !$('#Password').val() ||
+            !$('#PasswordConfirm').val()
+          ) {
+            if (!$('#regFirstname').val()) {
+              $('#regFirstname').addClass('regInputError');
+              $('.errorName').css('display', 'block');
+              e.stopPropagation();
+              e.preventDefault();
+              return;
+            } else {
+              $('#regFirstname').removeClass('regInputError');
+              $('.errorName').css('display', 'none');
+              checkCredentials = true;
+            }
+
+            if (!$('#regLastname').val()) {
+              // alert('not good');
+              $('#regLastname').addClass('regInputError');
+              $('.errorLast').css('display', 'block');
+              e.stopPropagation();
+              e.preventDefault();
+              return;
+            } else {
+              $('#regLastname').removeClass('regInputError');
+              $('.errorLast').css('display', 'none');
+              checkCredentials = true;
+            }
+
+            if (!$('#UserEmail').val()) {
+              $('#UserEmail').addClass('regInputError');
+              $('.errorEmail').css('display', 'block');
+              e.stopPropagation();
+              e.preventDefault();
+              return;
+            } else {
+              $('#UserEmail').removeClass('regInputError');
+              $('.errorEmail').css('display', ' none');
+              checkCredentials = true;
+            }
+
+            if (!$('#Password').val()) {
+              $('#Password').addClass('regInputError');
+              $('.errorPassword').css('display', 'block');
+              e.stopPropagation();
+              e.preventDefault();
+              return;
+            } else {
+              $('#Password').removeClass('regInputError');
+              $('.errorPassword').css('display', 'none');
+              checkCredentials = true;
+            }
+
+            if (!$('#PasswordConfirm').val()) {
+              $('#PasswordConfirm').addClass('regInputError');
+              $('.errorConfirm').css('display', 'block');
+              e.stopPropagation();
+              e.preventDefault();
+              return;
+            } else {
+              $('#PasswordConfirm').removeClass('regInputError');
+              $('.errorConfirm').css('display', 'none');
+              checkCredentials = true;
+            }
+          } else {
+            $('.errorReg').css('display', 'none');
+            $('.regInputError').removeClass('regInputError');
+          }
+
+          if (!checkLiked && !document.getElementById('terms_check').checked) {
+            $('.errorAgree').css('display', 'block');
+            return;
+          } else {
+            $('.errorAgree').css('display', 'none');
+          }
+          var regularExpression =
+            /^(?=.*\d)(?=.*[a-zA-Z])(?=.*[=/\]~`"/;'|:{,}@#+?$%^&*()><_!\\[-])[a-zA-Z0-9=/\]~`"/;'|:{,}@#+?$%^&*()><_!\\[-]{8,16}$/;
+
+          if (!regularExpression.test($('#Password').val())) {
+            // alert('Weak' + $('#Password').val());
+            $('.errorPasswordType').css('display', 'block');
+            e.stopPropagation();
+            e.preventDefault();
+            return;
+          } else {
+            //alert('strong');
+            $('.errorPasswordType').css('display', 'none');
+
+            if ($('#Password').val() !== $('#PasswordConfirm').val()) {
+              // alert('No match');
+              $('.errorConfirm').css('display', 'none');
+              $('.errorConfirmType').css('display', 'block');
+              $('#PasswordConfirm').addClass('regInputError');
+              e.stopPropagation();
+              e.preventDefault();
+              return;
+            } else {
+              $('#PasswordConfirm').removeClass('regInputError');
+            }
+          }
+
+          const pattern = '^\\w+@tshimologong\\.joburg$';
+          const regex2 = new RegExp(pattern, 'i');
+          if (!regex2.test($('#UserEmail').val())) {
+            $('#UserEmail').addClass('regInputError');
+            $('.errorEmailType').css('display', 'block');
+            e.stopPropagation();
+            e.preventDefault();
+            return;
+          } else {
+            $('#UserEmail').removeClass('regInputError');
+            $('.errorEmailType').css('display', 'none');
+          }
+
+          $.ajax({
+            url: 'https://localhost:44318/api/User/Register user',
+            method: 'POST',
+            data: {
+              Firstname: $('#regFirstname').val(),
+              Lastname: $('#regLastname').val(),
+              UserEmail: $('#UserEmail').val(),
+              Password: $('#Password').val(),
+            },
+
+            success: function (responseData) {
+              console.log(responseData);
+              if (
+                responseData ===
+                'error adding user duplicate email or password found'
+              ) {
+                $('#UserEmail').addClass('regInputError');
+                $('.errorEmailTypeReg').css('display', 'block');
+                return;
+              } else {
+                $('#UserEmail').removeClass('regInputError');
+                $('.errorEmailTypeReg').css('display', 'none');
+              }
+              if (responseData === 'email not permitted to register') {
+                document
+                  .getElementById('btnRegistrationError')
+                  .dispatchEvent(new Event('click'));
+                return;
+              }
+
+              document
+                .querySelector('#btnRegistrationSuccess')
+                .dispatchEvent(new Event('click'));
+              document
+                .querySelector('#logSign')
+                .dispatchEvent(new Event('click'));
+            },
+            error: function (jqXHR) {
+              alert('Server/network error, request not complete');
+            },
+            complete: function (jqXhr) {
+              if (jqXhr.statusText === 'success') {
+              }
+            },
+          });
+          e.stopPropagation();
+          e.preventDefault();
+          return;
+        });
+      });
+
+      var modal = document.getElementById('login-form');
+      var hero = document.getElementById('info-div');
+
+      function closee() {
+        modal.style.display = 'none';
+        hero.style.opacity = '1';
+      }
+    </script>
+
+    <script>
+      var accpbnt = document.getElementById('item_terms');
+      var wrapper = document.getElementById('wrapper');
+      var show_terms = document.getElementById('show_terms');
+      var terms_btn = document.getElementById('terms_btn');
+      show_terms.addEventListener('click', function clikk() {
+        wrapper.style.opacity = '1';
+        wrapper.style.display = '';
+      });
+
+      terms_btn.addEventListener('click', function () {
+        wrapper.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>

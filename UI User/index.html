@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Onboarding</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+
+    <!-- Plugin css for this page -->
+    <!-- <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css"> -->
+    <!-- <link rel="stylesheet" href="./vendors/chartist/chartist.min.css">s -->
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/progressBar.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="./images/tshimologong_logo_white.gif" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+
+    <link href="../adminassets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../adminassets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex align-items-center">
+                <a class="navbar-brand brand-logo" href="index.html">
+                    <img src="images/home_images/tshimologong_logo_white (1).gif" alt="logo" class="logo-dark" />
+                </a>
+                <a class="navbar-brand brand-logo-mini" href="./index.html"><img
+                        src="images/home_images/tshimologong_logo_white (1).gif" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
+                <h5 class="mb-0 font-weight-medium d-none d-lg-flex" style="color: white;">Welcome to tshimologong on
+                    boarding!</h5>
+                <ul class="navbar-nav navbar-nav-right ml-auto">
+
+                    <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown">
+                        <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="img-xs rounded-circle ml-2 recruitImg" src="images/faces/face8.jpg"
+                                alt="Profile image">
+                            <span class="font-weight-normal recruitFullname text-white"> ofentse khampe </span></a>
+                        <div style="background-color: #f2f6f6; "
+                            class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                            <div class="dropdown-header text-center">
+                                <img class="img-md rounded-circle recruitImg" style="width: 30%;"
+                                    src="images/faces/face8.jpg" alt="Profile image">
+                                <p style="color:black;" class="mb-1 mt-3 recruitFullname">Fentse</p>
+                                <p style="color:black;" class=" font-weight-light text-muted mb-0 recruitEmail">
+                                    ofentseKhampe@gmail.com</p>
+                            </div>
+                            <a class="dropdown-item " href="./pages/profile/Profile.html"><i
+                                    class="dropdown-item-icon icon-user text-primary "></i> My Profile <span
+                                    class="badge badge-pill badge-danger "></span></a>
+                           
+                            <a class="dropdown-item " id="signOut"><i
+                                    class="dropdown-item-icon icon-power text-primary "></i>Sign
+                                Out</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="icon-menu"></span>
+                </button>
+
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper ">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas "
+                style="background-image: url(./images/home_images/tshimologong_001_4.png);background-size: cover;"
+                id="sidebar ">
+                <ul class="nav ">
+                    <li class="nav-item nav-profile ">
+                        <a href="# " class="nav-link ">
+                            <div class="profile-image ">
+                                <img class="img-xs rounded-circle recruitImg" src="images/faces/face8.jpg "
+                                    alt="profile image ">
+                                <div class="dot-indicator bg-success "></div>
+                            </div>
+                            <div class="text-wrapper ">
+                                <p class="profile-name recruitFullname">Ofentse Khampe</p>
+                                <p class="designation ">Intern</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="nav-item nav-category ">
+                        <span class="nav-link ">Dashboard</span>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html ">
+                            <span class="menu-title ">HOME</span>
+                            <i class="icon-home menu-icon "></i>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item ">
+                        <a class="nav-link " href="pages/profile/Profile.html ">
+                            <span class="menu-title ">PROFILE</span>
+                            <i class="icon-user menu-icon "></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="pages/onboarding/onboarding.html">
+                            <span class="menu-title ">ONBOARDING</span>
+                            <i class="icon-note menu-icon "></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="pages/Departments/Department.html">
+                            <span class="menu-title ">DEPARTMENTS</span>
+                            <i class="icon-people menu-icon "></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <!-- partial -->
+            <div class="main-panel ">
+                <div class="content-wrapper ">
+
+                    <div class="row ">
+                        <div class="col-md-6 grid-margin stretch-card ">
+                            <div class="card ">
+                                <div class="card-t  con">
+                                    <div class="outer">
+                                        <div class="details" style="position: absolute;">
+                                            <h1 class="text-welcome">Welcome, first day with Onboarding...? </h1>
+                                               <a  class="btn btn-light"
+                                                        href="./pages/onboarding/onboarding.html">Click Me!</a>
+                                                <div class="btn-particles">
+                                                </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="background-color: white;">
+                            <div class="row align-items-center " style="height: 100%; ">
+                                <div class="col ">
+                                    <h1 class="mb-1 text-center text-black display-2">Progress</h1>
+                                    <p class="lead text-center text-black zeroProgress">Zero Tasks Completed</p>
+
+                                    <div class="progress" style="height: 45px; font-size: x-large; ">
+                                        <div class="progress-bar w-0 " role="progressbar " aria-valuenow="0 "
+                                            aria-valuemin="0 " aria-valuemax="100 ">
+                                            0%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- partial -->
+                        <!-- Modal -->
+                       
+                    </div>
+
+                    <!-- main-panel ends -->
+                </div>
+                <footer style="margin-top: 0px; " class="footer ">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between ">
+                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block ">Copyright ©
+                            Tshimologong.joburg 2021</span>
+
+                    </div>
+                </footer>
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal2" id="btnLoginFail" style="display: none;">
+										Failed Login
+									</button>
+
+                <div class="modal fade" id="LoginModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Login Attempt Fail
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="loginFailCloseIcon"></button>
+                            </div>
+                            <div class="modal-body text-danger">
+                                <h2>Login Required to access this page!</h2>
+                            </div>
+                            <div class="modal-body text-danger" id="closeTimer"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="loginFailClose">
+														Close
+													</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- page-body-wrapper ends -->
+            
+            </div>
+            <!-- container-scroller -->
+            <!-- plugins:js -->
+            <script src="vendors/js/vendor.bundle.base.js "></script>
+            <!-- endinject -->
+            <script src="./js/progressBar.js "></script>
+            <!-- Plugin js for this page -->
+            <script src="./vendors/chart.js/Chart.min.js "></script>
+            <script src="./vendors/moment/moment.min.js "></script>
+            <script src="./vendors/daterangepicker/daterangepicker.js "></script>
+            <script src="./vendors/chartist/chartist.min.js "></script>
+            <!-- End plugin js for this page -->
+            <!-- inject:js -->
+            <script src="js/off-canvas.js "></script>
+            <script src="js/misc.js "></script>
+            <!-- endinject -->
+            <!-- Custom js for this page -->
+            <script src="./js/dashboard.js "></script>
+            <script src="js/jquery-3.6.0.min.js "></script>
+
+            <script src="../adminassets/js/popper.min.js "></script>
+            <script src="../adminassets/vendor/bootstrap/js/bootstrap.min.js "></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js "
+                integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ "
+                crossorigin="anonymous ">
+            </script>
+            <script>
+                let details;
+                $('#loginFailClose,#loginFailCloseIcon').click(function () {
+                    window.location.href = '../../../index.html';
+                });
+                window.addEventListener('load', function () {
+                    details = JSON.parse(sessionStorage.getItem('details'));
+                    if (!details) {
+                        document
+                            .querySelector('#btnLoginFail')
+                            .dispatchEvent(new Event('click'));
+
+                        let closeDisplayMessage = document.getElementById('closeTimer');
+                        let count = 6;
+                        var interval = window.setInterval(function () {
+                            closeDisplayMessage.innerHTML =
+                                '<h2>Redirecting to login page in :' + count + '</h2>';
+                            count--;
+                            if (count === 0) {
+                                clearInterval(interval);
+                                document
+                                    .getElementById('loginFailClose')
+                                    .dispatchEvent(new Event('click'));
+                            }
+                        }, 1000);
+                    } else {
+                        details = details[0];
+                        let userFullanme = document.querySelectorAll('.recruitFullname');
+                        userFullanme.forEach((usfn) => {
+                            usfn.innerHTML = details.firstname + " " + details
+                                .lastname;
+                        })
+
+                        let email = document.querySelectorAll('.recruitEmail');
+                        email.forEach((mail) => {
+                            mail.innerHTML = details.userEmail;
+                        })
+
+
+                        $.ajax({
+                            url: 'https://localhost:44318/api/User/ImageUrl',
+                            method: 'POST',
+                            data: {
+                                id: details.userID,
+                            },
+                            success: function (dataResponse) {
+                                let imgProfiles = document.querySelectorAll('.recruitImg');
+                                if (dataResponse) {
+                                    for (img of imgProfiles) {
+                                        img.src = 'https://localhost:44318/' + dataResponse;
+                                    }
+                                }
+                                else{
+                                 for (img of imgProfiles) {
+                                     img.src = "../UI User/images/default.png"
+                                    }
+                                }
+
+                            },
+                            error: function () {
+                                              alert('Server/network error, request not complete');
+
+                            },
+                            complete: function () {},
+                        });
+
+                        // Update progress on load
+                        $.ajax({
+                            url: 'https://localhost:44318/api/User/GetCompleteTasks',
+                            method: 'POST',
+                            data: {
+                                id: details.userID,
+                            },
+                            success: function (responseData) {
+                                responseData = JSON.parse(responseData);
+                                const progressBar = document.querySelector('.progress-bar');
+                                const zeroProgress = document.querySelector('.zeroProgress');
+                                if (responseData.length) {
+                                    zeroProgress.style.display = "none ";
+                                    let TaskCompleted = [];
+                                    responseData.forEach((response) =>
+                                        TaskCompleted.push(response.TaskCompleted)
+                                    );
+                                    const totalNumberOfTasks = 5;
+                                    const percentageProgress = (TaskCompleted.length / 5) * 100;
+                                    console.log("Perecentager " + percentageProgress);
+                                    progressBar.setAttribute('class', '');
+                                    progressBar.classList.add('progress-bar');
+                                    progressBar.classList.add('progress-bar-striped');
+                                    progressBar.classList.add('progress-bar-animated');
+                                    progressBar.setAttribute(
+                                        'aria-valuenow',
+                                        '' + percentageProgress
+                                    );
+                                    progressBar.style.width = percentageProgress + '%';
+                                    progressBar.innerHTML = percentageProgress + '%';
+                                    console.log(TaskCompleted);
+                                } else {
+                                    zeroProgress.style.display = " ";
+
+                                    progressBar.setAttribute('class', '');
+                                    progressBar.classList.add('progress-bar');
+                                    progressBar.classList.add('progress-bar-striped');
+                                    progressBar.classList.add('bg-danger');
+                                    progressBar.classList.add('progress-bar-animated');
+                                    progressBar.setAttribute(
+                                        'aria-valuenow',
+                                        '' + 0
+                                    );
+                                    progressBar.style.width = 100 + '%';
+                                    progressBar.innerHTML = 0 + '%';
+                                }
+                            },
+                            error: function () {
+                                alert('Server error retrieving completed task');
+                            },
+                        });
+                    }
+                });
+
+                const btnSignOut = document.getElementById('signOut');
+                btnSignOut.addEventListener('click', function () {
+                    sessionStorage.clear();
+                    window.location.href = '../../index.html';
+                });
+            </script>
+
+            <script>
+                $.fn.boom = function (e) {
+                    var colors = [
+                        '##0d569b',
+                        '#7aa0ff',
+                        '#333',
+                        '#FFD100',
+                        '#FF9300',
+                        '#FF7FA4'
+                    ];
+                    var shapes = [
+                        '<polygon class="star " points="21,0,28.053423027509677,11.29179606750063,40.97218684219823,14.510643118126104,32.412678195541844,24.70820393249937,33.34349029814194,37.989356881873896,21,33,8.656509701858067,37.989356881873896,9.587321804458158,24.70820393249937,1.0278131578017735,14.510643118126108,13.94657697249032,11.291796067500632 "></polygon>',
+                        // '<path class="circle " d="m 20 1 a 1 1 0 0 0 0 25 a 1 1 0 0 0 0 -25 "></path>',
+                        '<polygon class="other-star " points="18,0,22.242640687119284,13.757359312880714,36,18,22.242640687119284,22.242640687119284,18.000000000000004,36,13.757359312880716,22.242640687119284,0,18.000000000000004,13.757359312880714,13.757359312880716 "></polygon>',
+                        '<polygon class="diamond " points="18,0,27.192388155425117,8.80761184457488,36,18,27.19238815542512,27.192388155425117,18.000000000000004,36,8.807611844574883,27.19238815542512,0,18.000000000000004,8.80761184457488,8.807611844574884 "></polygon>'
+                    ];
+
+                    var btn = $(this);
+                    var group = [];
+                    var num = Math.floor(Math.random() * 50) + 30;
+
+                    for (i = 0; i < num; i++) {
+                        var randBG = Math.floor(Math.random() * colors.length);
+                        var getShape = Math.floor(Math.random() * shapes.length);
+                        var c = Math.floor(Math.random() * 10) + 5;
+                        var scale = Math.floor(Math.random() * (8 - 4 + 1)) + 4;
+                        var x = Math.floor(Math.random() * (150 + 100)) - 100;
+                        var y = Math.floor(Math.random() * (150 + 100)) - 100;
+                        var sec = Math.floor(Math.random() * 1700) + 1000;
+                        var cir = $('<div class="cir "></div>');
+                        var shape = $('<svg class="shape ">' + shapes[getShape] + '</svg>');
+
+                        shape.css({
+                            top: e.pageY - btn.offset().top + 20,
+                            left: e.pageX - btn.offset().left + 40,
+                            'transform': 'scale(0.' + scale + ')',
+                            'transition': sec + 'ms',
+                            'fill': colors[randBG]
+                        });
+
+                        btn.siblings('.btn-particles').append(shape);
+
+                        group.push({
+                            shape: shape,
+                            x: x,
+                            y: y
+                        });
+                    }
+
+                    for (var a = 0; a < group.length; a++) {
+                        var shape = group[a].shape;
+                        var x = group[a].x,
+                            y = group[a].y;
+                        shape.css({
+                            left: x + 50,
+                            top: y + 15,
+                            'transform': 'scale(0)'
+                        });
+                    }
+
+                    setTimeout(function () {
+                        for (var b = 0; b < group.length; b++) {
+                            var shape = group[b].shape;
+                            shape.remove();
+                        }
+                        group = [];
+                    }, 2000);
+
+                }
+
+                $(function () {
+                    $(document).on('click', '.btn-t', function (e) {
+                        $(this).boom(e);
+                    });
+
+                });
+            </script>
+            <!-- End custom js for this page -->
+</body>
+
+</html>

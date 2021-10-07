@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Tshimologong Admin</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="adminassets/img/favicon.png" rel="icon" />
+    <link href="adminassets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="adminassets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <link href="adminassets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="adminassets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assetsadmin/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+
+    <link href="adminassets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assetsadmin/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+
+    <link href="adminassets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="adminassets/css/style.css" rel="stylesheet" />
+    <link href="adminassets/css/employee.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+    <style>
+        .boxS {
+            -webkit-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column" style="margin-top: 10%;">
+            <div class="profile">
+                <h1 class="text-light" id="adminName">Fentse</h1>
+                <div class="social-links mt-3 text-center">
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+
+                    <li>
+                        <a href="#Employee" class="nav-link scrollto" id="btnLoad"><i class="bi bi-people"></i>
+                            <span>View all
+                                Recruits</span></a>
+                    </li>
+
+                    <li>
+                        <a href="#RegisterRecruit" class="nav-link scrollto"><i class="bi bi-people"></i> <span>Register
+                                Recruit</span></a>
+                    </li>
+                    <li>
+                        <a href="#Service" class="nav-link scrollto" id="btnServices"><i class="bi bi-folder2-open"></i>
+                            <span>Service log</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link scrollto" id="btnLogOut"><i class="bx bx-log-in"></i> <span>Logout</span></a>
+                    </li> 
+                    
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+        </div>
+    </header>
+    <main id="main">
+
+        </section>
+
+
+        <div class="container" style="margin-top:3%;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section id="Employee" class="Employee boxS">
+                        <div class="continer-fluid">
+                            <div class="section-title">
+                                <h2>Recruits</h2>
+                            </div>
+
+                            <br />
+                            <!--Search-->
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <input id="txtRecruitSearch" type="search" class="form-control "
+                                            placeholder="Search for recruit" style="font-size: xx-large" />
+                                    </div>
+
+                                    <div class="col-4">
+                                        <button class="btn btn-primary" id="btnRecruitSearch"
+                                            style="font-size: xx-large;" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom" title="Search">
+                                            <i class="bi bi-search"></i>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+
+                            <!--filter-->
+                            <div class="col-6 offset-3  d-flex justify-content-center">
+                                <div class="input-group mb-3 input-group-lg">
+                                    <label class="input-group-text" for="inputGroupSelectFilter">Sort</label>
+                                    <select class="form-select" id="inputGroupSelectFilter">
+                                        <option class="op" value="UserId">Choose (default)...</option>
+                                        <option class="op" value="firstname">Name</option>
+                                        <option class="op" value="lastname">Surname</option>
+                                        <option class="op" value="email">Email</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <br />
+                            <!--filter-->
+                            <div class="col-6 offset-3  d-flex justify-content-center">
+                                <div class="input-group mb-3 input-group-lg">
+                                    <label class="input-group-text" for="inputGroupSelectFilter2">Filter</label>
+                                    <select class="form-select" id="inputGroupSelectFilter2">
+                                        <option class="op" selected value="default">Choose...</option>
+                                        <option class="op" value="all">Show All</option>
+                                        <option class="op" value="true">Activated</option>
+                                        <option class="op" value="false">Deactivated</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br />
+                            <!--
+          <button class="btn btn-outline-secondary btn-create" type="submit">
+            Add new email
+          </button> -->
+                            <table id="employees" class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Role</th>
+                                        <th>First name</th>
+                                        <th>Last name</th>
+                                        <th>Email</th>
+                                        <th>Active status</th>
+                                        <th>Activate</th>
+                                        <th>Deactivate</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tblBodyEmployees"></tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section id="RegisterRecruit" class="Service  boxS">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-title">
+                                        <h2>Register Recruit</h2>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <table id="services" class="table table-hove">
+                                        <tr>
+                                            <th style="
+                      text-align: center;
+                      padding: 1.2rem;
+                      font-size: larger;
+                    ">
+                                                Register Recruit Email
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 0px; background-color: white">
+                                                <input id="txtEmail" type="email" class="form-control form-control-lg"
+                                                    placeholder="Enter recruit email here"
+                                                    style="font-size: xx-large" />
+                                            </td>
+                                        </tr>
+                                        <tr id="rowError">
+                                            <td>
+                                                <h3 style="color: red">Error recruit already registered</h3>
+                                            </td>
+                                        </tr>
+                                        <tr id="rowErrorEmpty">
+                                            <td>
+                                                <h3 style="color: red">Error email recruit required</h3>
+                                            </td>
+                                        </tr>
+                                        <tr id="rowErrorEmail">
+                                            <td>
+                                                <h3 style="color: red">
+                                                    Error, incorrect email format. Use E.g Thulani@tshimologong.joburg
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 12px; background-color: white;border-bottom:none;">
+                                                <button type="button" class="btn btn-success" id="btnSubmitEmail"
+                                                    style="width: 50%; padding: 0.5rem; font-size: x-large">
+                                                    Add
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section id="Service" class="Service  boxS">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="section-title">
+                                        <h2>Service log</h2>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <button class="btn btn-primary" id="btnRefreshService"
+                                        style="width: 8%;font-size: xx-large;" data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Reload Service Log">
+                                        <i class="bi bi-arrow-repeat"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <table id="services" class="table table-hover table-striped services">
+                                        <thead>
+                                            <tr>
+                                                <th>Amin ID</th>
+                                                <th>Created date</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tblServicesBody"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center">
+                                    <input type="button" id="btnPrintLog" onclick="printDiv('Service')"
+                                        value="Save as PDF!" class="btn btn-success"
+                                        style="width: 50%; padding: 0.5rem; font-size: x-large" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                id="btnLaunchComplete" style="display: none">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Recruit Email Registration
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">Registration of recruit successful!</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Login fail info-->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal"
+                id="btnLoginFail" style="display: none;">
+                Failed Login
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Login Attempt Fail
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                id="loginFailCloseIcon"></button>
+                        </div>
+                        <div class="modal-body text-danger">
+                            <h2>Login Required to access this page!</h2>
+                        </div>
+                        <div class="modal-body text-danger" id="closeTimer"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="loginFailClose">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Not found user modal-->
+
+            <!--Login fail info-->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notFounfModal"
+                id="btnNotFoundModal" style="display: none;">
+                Not found user
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="notFounfModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Search Attempt Fail
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                id="searchFailCloseIcon"></button>
+                        </div>
+                        <div class="modal-body text-danger">
+                            <h2>User not found!</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                id="btnSearchFailClose">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>tshimologong</span></strong>
+            </div>
+            <div class="credits"></div>
+        </div>
+    </footer>
+    <!-- End  Footer -->
+    <div style="display: none;" id="printDiv"></div>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="adminassets/vendor/aos/aos.js"></script>
+    <script src="adminassets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="adminassets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="adminassets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="adminassets/vendor/php-email-form/validate.js"></script>
+    <script src="adminassets/vendor/purecounter/purecounter.js"></script>
+    <script src="adminassets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="adminassets/vendor/typed.js/typed.min.js"></script>
+    <script src="adminassets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="adminassets/js/main.js"></script>
+    <script src="adminassets/js/jquery-3.6.0.min.js"></script>
+    <script src="adminassets/js/popper.min.js"></script>
+
+    <script src="adminassets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        let rowErrorDisplay = document.getElementById('rowError');
+        let rowErrorEmptyDisplay = document.getElementById('rowErrorEmpty');
+        let rowErrorEmailDisplay = document.getElementById('rowErrorEmail');
+        let details;
+        window.addEventListener('load', function () {
+            rowErrorDisplay.style.display = 'none';
+            rowErrorEmptyDisplay.style.display = 'none';
+            rowErrorEmailDisplay.style.display = 'none';
+            details = JSON.parse(sessionStorage.getItem('details'));
+
+
+            if (!details) {
+                document
+                    .querySelector('#btnLoginFail')
+                    .dispatchEvent(new Event('click'));
+
+                let closeDisplayMessage = document.getElementById('closeTimer');
+                let count = 6;
+                var interval = window.setInterval(function () {
+                    closeDisplayMessage.innerHTML = '<h2>Redirecting to login page in :' + count +
+                        '</h2>';
+                    count--;
+                    if (count === 0) {
+                        clearInterval(interval);
+                        document.getElementById('loginFailClose').dispatchEvent(new Event('click'));
+
+                    }
+                }, 1000);
+
+            } else {
+                details = details[0];
+                document.getElementById('adminName').innerHTML = 'Admin : @' + details.firstname;
+                console.log(details);
+
+            }
+
+
+        });
+
+        searchRecruit = (e) => {
+            let userFound = false;
+            $('#tblBodyEmployees').empty();
+            $.ajax({
+                url: 'https://localhost:44318/api/Admin/GetCohort?adminId=' +
+                    details.userID +
+                    '&role=' +
+                    details.userRole,
+                method: 'GET',
+                success: function (dataResponse) {
+                    $('#tblBodyEmployees').empty();
+                    console.log(dataResponse);
+                    $.each(JSON.parse(dataResponse), function (index, value) {
+                        if (value.firstname.toLowerCase() === $('#txtRecruitSearch').val()
+                            .toLowerCase() ||
+                            value.lastname.toLowerCase() === $('#txtRecruitSearch').val()
+                            .toLowerCase() ||
+                            value.email.toLowerCase() === $('#txtRecruitSearch').val()
+                            .toLowerCase()) {
+
+                            if (value.role === 2) {
+                                userFound = true;
+                                var row = $(
+                                    '<tr><td>' +
+                                    'Recruit' +
+                                    '</td>' +
+                                    '<td>' +
+                                    value.firstname +
+                                    '</td>' +
+                                    '<td>' +
+                                    value.lastname +
+                                    '</td>' +
+                                    '<td>' +
+                                    value.email +
+                                    '</td>' +
+                                    '<td>' +
+                                    value.active +
+                                    '</td>' +
+                                    '<td> <button type="button" class="btn btn-primary activate" id =' +
+                                    value.UserId +
+                                    '>Activate</button> </td>' +
+                                    '<td> <button type="button" class="btn btn-danger deactivate"id =' +
+                                    value.UserId +
+                                    '>Deactivate</button> </td>' +
+                                    '</tr>'
+                                );
+                                $('#employees').append(row);
+                            }
+                        }
+
+
+                    });
+                    if (!userFound) {
+                        document.querySelector('#btnNotFoundModal').dispatchEvent(new Event('click', {
+                            cancelable: true
+                        }));
+                        $('#searchFailCloseIcon,#btnSearchFailClose').click(function () {})
+                        return;
+                    }
+                },
+                error: function () {
+                    alert('Server/network error, request not complete');
+
+                },
+            });
+
+        }
+
+        function dynamicSort(property) {
+            var sortOrder = 1;
+            if (property[0] === "-") {
+                sortOrder = -1;
+                property = property.substr(1);
+            }
+            return function (a, b) {
+                /* next line works with strings and numbers, 
+                 * and you may want to customize it to your needs
+                 */
+                var result = (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0;
+                return result * sortOrder;
+            }
+        }
+
+        $('#inputGroupSelectFilter2').change(function () {
+            $('#tblBodyEmployees').empty();
+            let optionValue = $(this).val();
+            console.log(optionValue);
+            if (optionValue === 'true') {
+                optionValue = true;
+            }
+            if (optionValue === 'false') {
+                optionValue = false;
+            }
+
+            $('#txtRecruitSearch').val('');
+            $.ajax({
+                url: 'https://localhost:44318/api/Admin/GetCohort?adminId=' +
+                    details.userID +
+                    '&role=' +
+                    details.userRole,
+                method: 'GET',
+                success: function (dataResponse) {
+
+                    $('#tblBodyEmployees').empty();
+                    dataResponse = JSON.parse(dataResponse);
+                    console.log(dataResponse);
+                    $.each(dataResponse, function (index, value) {
+                        console.log(value);
+
+                        if (value.role === 2 && value.active === Boolean(optionValue) &&
+                            optionValue !== 'all') {
+                            var row = $(
+                                '<tr><td>' +
+                                'Recruit' +
+                                '</td>' +
+                                '<td>' +
+                                value.firstname +
+                                '</td>' +
+                                '<td>' +
+                                value.lastname +
+                                '</td>' +
+                                '<td>' +
+                                value.email +
+                                '</td>' +
+                                '<td>' +
+                                value.active +
+                                '</td>' +
+                                '<td> <button type="button" class="btn btn-primary activate" id =' +
+                                value.UserId +
+                                '>Activate</button> </td>' +
+                                '<td> <button type="button" class="btn btn-danger deactivate"id =' +
+                                value.UserId +
+                                '>Deactivate</button> </td>' +
+                                '</tr>'
+                            );
+                            $('#employees').append(row);
+                        }
+
+                        if (value.role === 2 && optionValue === 'all') {
+                            var row = $(
+                                '<tr><td>' +
+                                'Recruit' +
+                                '</td>' +
+                                '<td>' +
+                                value.firstname +
+                                '</td>' +
+                                '<td>' +
+                                value.lastname +
+                                '</td>' +
+                                '<td>' +
+                                value.email +
+                                '</td>' +
+                                '<td>' +
+                                value.active +
+                                '</td>' +
+                                '<td> <button type="button" class="btn btn-primary activate" id =' +
+                                value.UserId +
+                                '>Activate</button> </td>' +
+                                '<td> <button type="button" class="btn btn-danger deactivate"id =' +
+                                value.UserId +
+                                '>Deactivate</button> </td>' +
+                                '</tr>'
+                            );
+                            $('#employees').append(row);
+
+                        }
+                        if (value.role === 2 && optionValue === 'default') {
+                            $('#tblBodyEmployees').empty();
+                            return;
+                        }
+                    });
+                },
+                error: function () {
+                    console.log('not working');
+                },
+            });
+        })
+
+        $('#inputGroupSelectFilter').change(function () {
+            let optionValue = $(this).val();
+            console.log('sort');
+            $('#txtRecruitSearch').val('');
+            $('#tblBodyEmployees').empty();
+
+            $.ajax({
+                url: 'https://localhost:44318/api/Admin/GetCohort?adminId=' +
+                    details.userID +
+                    '&role=' +
+                    details.userRole,
+                method: 'GET',
+                success: function (dataResponse) {
+
+                    $('#tblBodyEmployees').empty();
+                    dataResponse = JSON.parse(dataResponse);
+
+                    dataResponse.sort(dynamicSort(optionValue));
+                    $.each(dataResponse, function (index, value) {
+                        if (value.role === 2) {
+                            var row = $(
+                                '<tr><td>' +
+                                'Recruit' +
+                                '</td>' +
+                                '<td>' +
+                                value.firstname +
+                                '</td>' +
+                                '<td>' +
+                                value.lastname +
+                                '</td>' +
+                                '<td>' +
+                                value.email +
+                                '</td>' +
+                                '<td>' +
+                                value.active +
+                                '</td>' +
+                                '<td> <button type="button" class="btn btn-primary activate" id =' +
+                                value.UserId +
+                                '>Activate</button> </td>' +
+                                '<td> <button type="button" class="btn btn-danger deactivate"id =' +
+                                value.UserId +
+                                '>Deactivate</button> </td>' +
+                                '</tr>'
+                            );
+                            $('#employees').append(row);
+                        }
+                    });
+                },
+                error: function () {
+                    console.log('not working');
+                },
+            });
+        })
+
+        $('#txtRecruitSearch').on('keypress', function (e) {
+            if (e.type === 'keypress') {
+                if (e.which === 13) {
+                    document.querySelector('#btnRecruitSearch').dispatchEvent(new Event('click'));
+                }
+            }
+        });
+        $('#btnRecruitSearch').on('click', searchRecruit);
+
+        $('#loginFailClose,#loginFailCloseIcon').click(function () {
+            window.location.href = 'index.html';
+        });
+
+
+
+        $('#btnRefreshService').click(function () {
+            document
+                .querySelector('#btnServices')
+                .dispatchEvent(new Event('click'));
+        });
+        console.log(details);
+
+
+
+        $('#btnLoad').click(function () {
+            console.log(details)
+            $.ajax({
+                url: 'https://localhost:44318/api/Admin/GetCohort?adminId=' +
+                    details.userID +
+                    '&role=' +
+                    details.userRole,
+                method: 'GET',
+                success: function (dataResponse) {
+                    $('#tblBodyEmployees').empty();
+                    console.log(dataResponse);
+                    $.each(JSON.parse(dataResponse), function (index, value) {
+                        if (value.role === 2) {
+                            var row = $(
+                                '<tr><td>' +
+                                'Recruit' +
+                                '</td>' +
+                                '<td>' +
+                                value.firstname +
+                                '</td>' +
+                                '<td>' +
+                                value.lastname +
+                                '</td>' +
+                                '<td>' +
+                                value.email +
+                                '</td>' +
+                                '<td>' +
+                                value.active +
+                                '</td>' +
+                                '<td> <button type="button" class="btn btn-primary activate" id =' +
+                                value.UserId +
+                                '>Activate</button> </td>' +
+                                '<td> <button type="button" class="btn btn-danger deactivate"id =' +
+                                value.UserId +
+                                '>Deactivate</button> </td>' +
+                                '</tr>'
+                            );
+                            $('#employees').append(row);
+                        }
+                    });
+                },
+                error: function () {
+                    console.log('not working');
+                },
+            });
+        });
+        // Handle activate and deactivate.
+        $(document).on('click', '.activate', function (ev) {
+            $.ajax({
+                url: 'https://localhost:44318/api/Admin/ActivateUser',
+                method: 'POST',
+                data: {
+                    userId: parseInt($(this).attr('id')),
+                    adminId: details.userID,
+                    role: details.userRole,
+                },
+                success: function (dataResponse) {
+                    dataResponse = JSON.parse(dataResponse)[0];
+                    let userActivatedRow = $('td').has('button[id=' + dataResponse.UserId + ']');
+                    userActivatedRow.parent().children().eq(4).text("true");
+                }
+            });
+        });
+
+        $(document).on('click', '.deactivate', function (ev) {
+            $.ajax({
+                url: 'https://localhost:44318/api/Admin/DeactivateUser',
+                method: 'POST',
+                data: {
+                    userId: parseInt($(this).attr('id')),
+                    adminId: details.userID,
+                    role: details.userRole,
+                },
+                success: function (dataResponse) {
+                    dataResponse = JSON.parse(dataResponse)[0];
+                    let userActivatedRow = $('td').has('button[id=' + dataResponse.UserId + ']');
+                    userActivatedRow.parent().children().eq(4).text("false");
+                }
+            });
+        });
+
+        $('#btnSubmitEmail').click(function () {
+            if (!document.getElementById('txtEmail').value) {
+                rowErrorEmptyDisplay.style.display = 'block';
+                return;
+            } else {
+                rowErrorEmptyDisplay.style.display = 'none';
+            }
+
+            const pattern = '^\\w+@tshimologong\\.joburg$';
+            const regex2 = new RegExp(pattern, 'i');
+            if (!regex2.test($('#txtEmail').val())) {
+                rowErrorEmailDisplay.style.display = 'block';
+                return;
+            } else {
+                rowErrorEmailDisplay.style.display = 'none';
+            }
+
+            $.ajax({
+                url: 'https://localhost:44318/api/Admin/AddUserEmail',
+                method: 'POST',
+                data: {
+                    email: $('#txtEmail').val(),
+                    adminId: details.userID,
+                    role: details.userRole,
+                },
+                success: function (data) {
+
+                    if (data.match(/^error/)) {
+                        rowErrorDisplay.style.display = 'block';
+                        return;
+                    }
+                    document
+                        .querySelector('#btnLaunchComplete')
+                        .dispatchEvent(new Event('click'));
+                    document.getElementById('txtEmail').value = '';
+                    rowErrorDisplay.style.display = 'none';
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr);
+                    console.log(status);
+                    console.log(error);
+                },
+            });
+        });
+
+        $('#btnServices').click(function () {
+            $.ajax({
+                url: 'https://localhost:44318/api/System/getLog?adminId=' +
+                    details.userID +
+                    '&role=' +
+                    details.userRole,
+                method: 'GET',
+                success: function (data) {
+                    $('#tblServicesBody').empty();
+                    $.each(JSON.parse(data), function (index, value) {
+                        var row = $(
+                            '<tr><td>' +
+                            value.adminId +
+                            '</td>' +
+                            '<td>' +
+                            value.created +
+                            '</td>' +
+                            '<td>' +
+                            value.action +
+                            '</td>' +
+                            '</tr>'
+                        );
+                        $('.services').append(row);
+                    });
+                },
+                error: function () {
+                    console.log('getting log fail');
+                },
+            });
+        });
+
+        document.getElementById('btnLogOut').addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            window.location.href = 'index.html';
+            sessionStorage.clear();
+        });
+    </script>
+
+    <script>
+        function printDiv(divName) {
+            var originalContents = document.body.innerHTML;
+
+            let btnRefresh = document.getElementById('btnRefreshService');
+            let btnPrint = document.getElementById('btnPrintLog');
+            btnRefresh.style.display = 'none';
+            btnPrint.style.display = 'none';
+
+            var printContents = document.getElementById(divName).innerHTML;
+            document.body.innerHTML = printContents;
+
+            window.print();
+
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

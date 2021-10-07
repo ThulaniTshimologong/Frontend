@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.wrapper {
+    position: absolute;
+    bottom: 50px;
+    top: 140px;
+    left: 960px;
+    max-width: 365px;
+    background: #fff;
+    /* padding: 25px 25px 30px 25px; */
+    border-radius: 15px;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+    background: rgba(216, 209, 209, 0);
+    text-align: center;
+    opacity: 0;
+    color: white;
+    /* border: 2px solid red; */
+    /* background-color: transparent; */
+}
+
+.terms li {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    font-size: 10px;
+}
+
+
+/* .terms li:hover {
+  color: white;
+  font-size: 12px;
+  transition: 0.6s;
+  cursor: pointer;
+} */
+
+.wrapper.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+::selection {
+    color: rgb(255, 247, 247);
+    background: #f1f1f7;
+    color: black;
+}
+
+.wrapper img {
+    max-width: 90px;
+}
+
+.content header {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content {
+    margin-top: 10px;
+    width: 150%;
+}
+
+.content p {
+    color: #222020;
+    margin: 5px 0 20px 0;
+}
+
+.content .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #7c746d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    transform: scale(0.97);
+}
+
+.buttons .item {
+    margin: 0 10px;
+}
+
+.buttons a {
+    color: #fcba7f;
+}

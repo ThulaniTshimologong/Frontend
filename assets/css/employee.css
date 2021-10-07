@@ -1,0 +1,41 @@
+.btn-create {
+  background-color: #149ddd;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+#employees {
+  text-align: center;
+}
+#employees .btn-create {
+  margin-left: 0;
+  padding-top: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#employees td,
+#employees th {
+  padding: 1.5rem;
+  font-size: 15px;
+}
+
+#employees th {
+  text-align: center;
+  background-color: #149ddd;
+  color: white;
+}
+
+#services th {
+  background-color: #149ddd;
+  color: white;
+  text-align: center;
+}
+
+#services td,
+#services th {
+  text-align: center;
+
+  padding: 1.5rem;
+}
